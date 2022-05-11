@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- Define your beans here -->
+    <bean class="autowire_through_xml.Address" name="address">
+    <property name="address" value=" main road, near yervada ,block no 2,viman nagar,423204"></property>
+    </bean>
+    
+    <bean class="autowire_through_xml.Employee" name="emp" autowire="byName"> <!-- we can use byType ,Constructor mode  to inject the object into employee class  -->
+    <property name="name" value="pratik jadhav" />
+     <property name="empid" value="4232E004" />
+      <property name="company_name" value="HSBC" />
+    </bean>
+    
+   
+</beans>
+
+
+
+
+
