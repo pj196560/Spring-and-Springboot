@@ -1,6 +1,7 @@
 package com.atowire_through_annotation;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Percentage {
 	
@@ -14,6 +15,8 @@ public class Percentage {
 	private String sub5;
 	private String sub6;
 
+	@Autowired
+	@Qualifier("temp1")
 	private Mark marks;
 	
 	public Percentage() {
@@ -102,8 +105,6 @@ public class Percentage {
 	public Mark getMarks() {
 		return marks;
 	}
-	
-	@Autowired
 	public void setMarks(Mark marks) {
 		this.marks = marks;
 	}
