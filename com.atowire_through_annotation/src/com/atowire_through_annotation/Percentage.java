@@ -16,7 +16,7 @@ public class Percentage {
 	private String sub6;
 
 	@Autowired
-	@Qualifier("temp1")
+	@Qualifier("temp3")
 	private Mark marks;
 	
 	public Percentage() {

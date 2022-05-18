@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:util="http://www.springframework.org/schema/util"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd
+    http://www.springframework.org/schema/util
+    http://www.springframework.org/schema/util/spring-util.xsd
+    
+    ">
+    
+    <!-- Stand alone list -->
+    <util:list list-class="java.util.LinkedList" id="list1">
+    <value>Rohit</value>
+    <value>aman</value>
+    <value>Rajesh</value>
+    <value>Pooja</value>
+    <value>Dhanashree</value>
+    <value>Pratik</value>
+    </util:list>
+    
+    <!-- Stand alone  Set -->
+    <util:set set-class="java.util.HashSet" id="set1">
+    <value>842146</value>
+    <value>7020042</value>
+    <value>304878</value>
+    <value>9096045</value>
+    <value>4048789</value>
+    <value>976366</value>
+    </util:set>
+    
+       <!-- Stand alone  map -->
+       <util:map map-class="java.util.HashMap" id ="map1">
+     <entry key="java=" value="8000" />
+     <entry key="python=" value="7000" />
+     <entry key="c+++=" value="4000" />
+     <entry key="dotnet" value="8000" />
+     <entry key="spring framework" value="10000" />
+     <entry key="springboot" value="8500" />
+     </util:map>
+     
+     <!-- stand alone properties -->
+     
+     <util:properties id="prop1">
+     <prop key="driver=">com.mysql.database </prop>
+      <prop key="name=">pratik jadhav </prop>
+       <prop key="databse name=">person information </prop>
+       <prop key="software=">my SQL</prop>
+       <prop key="username=">pratik@123</prop>
+       <prop key="password=">1234pj</prop>
+       
+     </util:properties>
+   
+
+    <!-- Define your beans here -->
+    
+    <bean class="com.Standalone_collections.Person" name="person1">
+    <property name="freindlist" ref="list1" />
+    <property name="phonenumber" ref="set1" />
+    <property name="coursefees" ref="map1" />
+    <property name="properties" ref="prop1" />
+    </bean>
+ 
+</beans>
+
+
+
+
+

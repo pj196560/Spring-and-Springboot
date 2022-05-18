@@ -9,7 +9,7 @@
 
     <!-- Define your beans here -->
    <context:annotation-config />
-   <bean class="com.atowire_through_annotation.Mark" name="temp">
+   <bean class="com.atowire_through_annotation.Mark" name="temp2">
    <property name="sub1_marks" value="88" />
    <property name="sub2_marks" value="77" />
    <property name="sub3_marks" value="49" />
@@ -25,6 +25,15 @@
    <property name="sub4_marks" value="65" />
    <property name="sub5_marks" value="70" />
    <property name="sub6_marks" value="71" />
+   </bean>
+   
+    <bean class="com.atowire_through_annotation.Mark" name="temp3">
+   <property name="sub1_marks" value="77" />
+   <property name="sub2_marks" value="84" />
+   <property name="sub3_marks" value="66" />
+   <property name="sub4_marks" value="71" />
+   <property name="sub5_marks" value="68" />
+   <property name="sub6_marks" value="61" />
    </bean>
    
    
