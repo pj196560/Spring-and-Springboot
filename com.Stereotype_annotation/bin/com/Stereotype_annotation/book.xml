@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:util="http://www.springframework.org/schema/util"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd
+    http://www.springframework.org/schema/util
+    http://www.springframework.org/schema/util/spring-util.xsd
+    
+    ">
+    <context:component-scan base-package="com.Stereotype_annotation" />
+    <!-- Stand alone list -->
+    <util:list list-class="java.util.ArrayList" id="list1">
+    <value>life of legend</value>
+    <value>chandrama</value>
+    <value>history of god </value>
+    <value>deewana </value>
+    <value>mistakes of life</value>
+    <value> polytics of maharashtra</value>
+    </util:list>
+    
+    
+     <!-- Stand alone list -->
+    <util:list list-class="java.util.LinkedList" id="list2">
+    <value>455.00</value>
+    <value>600.00</value>
+    <value> 900.00 </value>
+    <value>970.00</value>
+    <value>899.00</value>
+    <value> 1199.99</value>
+    </util:list>
+    
+    
+    <!-- Stand alone  Set -->
+    <util:set set-class="java.util.HashSet" id="set1">
+    <value>jadhav</value>
+    <value>steve smith</value>
+    <value>rakesh sawant</value>
+    <value>niranjan suri</value>
+    <value>blackard cowrage</value>
+    <value>shiwaji sawant</value>
+    </util:set>
+    
+      
+</beans>
+
+
+
+
+
