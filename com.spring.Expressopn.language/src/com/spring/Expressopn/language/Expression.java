@@ -12,6 +12,16 @@ public class Expression {
 	private double c;
 	@Value("#{new java.lang.String('pratik jadhav')}")
 	private String name;
+	
+	@Value("#{83>47}")
+	private boolean isactive;
+	
+	public boolean isIsactive() {
+		return isactive;
+	}
+	public void setIsactive(boolean isactive) {
+		this.isactive = isactive;
+	}
 	public int getA() {
 		return a;
 	}
@@ -38,8 +48,9 @@ public class Expression {
 	}
 	@Override
 	public String toString() {
-		return "Expression [a=" + a + ", b=" + b + ", c=" + c + ", name=" + name + "]";
+		return "Expression [a=" + a + ", b=" + b + ", c=" + c + ", name=" + name + ", isactive=" + isactive + "]";
 	}
+	
 	
 	
 
