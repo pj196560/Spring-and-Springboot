@@ -2,7 +2,7 @@ package com.Springdemo.constructorInjection;
 
 public class Certificate {
 	
-    String certificate_name;
+    public String certificate_name;
 
 	public Certificate(String certificate_name) {
 
